@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trendy Threads - Clothing Store</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://i.ibb.co/PtNQvb7/clothing-banner.jpg') no-repeat center/cover;
+      color: white;
+      padding: 100px 20px;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .products {
+      padding: 40px 20px;
+    }
+    .product-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trendy Threads</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Order Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Trendy Threads</h2>
+    <p>Discover stylish, comfortable, and affordable fashion for everyone!</p>
+    <button onclick="window.location.href='form.html'">Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h2>Our Collection</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://i.ibb.co/5sVZbtk/shirt.jpg" alt="Men Shirt">
+        <h3>Men’s Casual Shirt</h3>
+        <p>₹999</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/mc9YBy0/dress.jpg" alt="Women Dress">
+        <h3>Women’s Summer Dress</h3>
+        <p>₹1,499</p>
+      </div>
+      <div class="product">
+        <img src="https://i.ibb.co/3fpv6bM/kids.jpg" alt="Kids Wear">
+        <h3>Kids Fashion Set</h3>
+        <p>₹799</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Trendy Threads | Designed with ❤️</p>
+  </footer>
+</body>
+</html>

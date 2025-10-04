@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Details - Trendy Threads</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+    }
+    form {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Customer Information</h1>
+  </header>
+
+  <form id="orderForm" onsubmit="return handleFormSubmit(event)">
+    <label>Name:</label>
+    <input type="text" id="name" required>
+
+    <label>Email:</label>
+    <input type="email" id="email" required>
+
+    <label>Address:</label>
+    <textarea id="address" required></textarea>
+
+    <label>Product:</label>
+    <select id="product">
+      <option>Men’s Casual Shirt - ₹999</option>
+      <option>Women’s Summer Dress - ₹1,499</option>
+      <option>Kids Fashion Set - ₹799</option>
+    </select>
+
+    <button type="submit">Proceed to Payment</button>
+  </form>
+
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      localStorage.setItem("customerName", name);
+      window.location.href = "payment.html";
+    }
+  </script>
+</body>
+</html>
